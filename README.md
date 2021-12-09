@@ -21,7 +21,7 @@ O conteúdo do repositório e estrutura deve ser da forma de como esta monstrand
 
 ### Etapa 2: Criação de uma função de instância no IAM Roles (Funções) "Amazonec2RoleforAWScodeDeploy" e uma Roles (Funções) aplicativo CodeDeploy. AWS service (Serviço da AWS) "CodeDeploy"
 
-### Etapa 3: Criação da instância EC2 Amazon Linux 2 CentOS e anexar a função criada anteriormente e adicinoar o script shell no "user data" para instalar o agente CodeDeploy na inicialização da instância EC2 de forma automatizada.
+### Etapa 3: Criação da instância EC2 Amazon Linux 2 CentOS e anexar a função criada anteriormente e adicionando o script shell no "user data" para instalar o agente CodeDeploy na inicialização da instância EC2 de forma automatizada.
 
 
 #!/bin/bash
