@@ -23,14 +23,23 @@ O conteúdo do repositório e estrutura deve ser da forma de como esta monstrand
 
 ### Etapa 3: Criação da instância EC2 Amazon Linux 2 CentOS e anexar a função criada anteriormente e adicinoar o script shell no "user data" para instalar o agente CodeDeploy na inicialização da instância EC2 de forma automatizada.
 
+
 #!/bin/bash
+
 yum -y update
+
 yum install -y ruby
+
 yum install -y aws-cli
+
 cd /home/ec2-user
+
 wget https://aws-codedeploy-us-east-2.s3.us-east-2.amazonaws.com/latest/install
+
 chmod +x ./install
+
 ./install auto
+
 
 ### Etapa 4: Criar um aplicativo no CodeDeploy e grupo de implantação no CodeDeploy
 
