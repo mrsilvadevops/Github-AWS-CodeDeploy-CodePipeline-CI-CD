@@ -3,6 +3,10 @@ Realizando o deploy de um site html dentro de uma instância EC2 na AWS.
 
 ### Etapa 1: Criar um repositório no Github 
 O conteúdo do repositório e estrutura deve ser da forma de como esta monstrando abaixo; Com os "arquivo appspec.yml" para ler os "scripts shell" e instalar as dependencias dentro do caminho criado /var/www/html/ "Nome da pasta do repositório contendo os arquivos do site" dentro da instância EC2 (index.html "site" e as dependencias dos arquivos do site na raiz License.txt)
+       
+       
+       
+       
        │-- appspec.yml
        │-- index.html
        │-- LICENSE.txt
@@ -11,7 +15,9 @@ O conteúdo do repositório e estrutura deve ser da forma de como esta monstrand
            │-- start_server
            └-- stop_server
            
-    ![image](https://user-images.githubusercontent.com/80183407/145429624-1f49cd86-4fa1-4c06-90ec-3b6d3a333b87.png)
+
+![image](https://user-images.githubusercontent.com/80183407/145441444-649cdb4a-4566-416d-b0fe-d9b622d1962a.png)
+    
 
 ### Etapa 2: Criação de uma função de instância no IAM Roles (Funções) "Amazonec2RoleforAWScodeDeploy" e uma Roles (Funções) aplicativo CodeDeploy. AWS service (Serviço da AWS) "CodeDeploy"
 
